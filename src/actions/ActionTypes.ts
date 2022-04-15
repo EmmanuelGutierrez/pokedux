@@ -1,0 +1,6 @@
+export enum ActionTypes {
+  SET_POKEMONS = "SET_POKEMONS",
+  GET_POKEMONS = "GET_POKEMONS",
+  SET_ERROR = "SET_ERROR",
+  CLEAR_ERROR = "CLEAR_ERROR",
+}
