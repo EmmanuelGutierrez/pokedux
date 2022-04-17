@@ -7,7 +7,7 @@ import { RootState } from "../../redux/store";
 import { Menu } from "../Menu";
 import "./Layout.css";
 const Layout = () => {
-  const errorMessage = useSelector((state: RootState) => state.error);
+  const errorMessage = useSelector((state: RootState) => state.ui.error);
   const dispatch = useDispatch();
 
   const handleDismiss = () => {

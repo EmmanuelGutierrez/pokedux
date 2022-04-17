@@ -19,8 +19,8 @@ import { typeColorFun } from "../../utils/typesColors";
 import { firstWordUp } from "../../utils/firstWordUp";
 import { Favorite } from "@mui/icons-material";
 import { useDispatch } from "react-redux";
-import { addFavorite } from "../../redux/actions";
 import backgroudPokemon from "../../static/images/background2.jpg";
+import { addFavorite } from "../../redux/slices/pokemon";
 interface IPokemonCardProps {
   pokemon: IPokemon;
 }
