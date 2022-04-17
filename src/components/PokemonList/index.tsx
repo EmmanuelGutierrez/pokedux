@@ -14,7 +14,7 @@ const PokemonList = (props: IPokemonListProps) => {
   const { pokemons } = props;
 
   const totalLoaders = Array(12).fill("");
-  const loading = useSelector((state: RootState) => state.loading);
+  const loading = useSelector((state: RootState) => state.ui.loading);
   return (
     <Grid container spacing={3}>
       {loading

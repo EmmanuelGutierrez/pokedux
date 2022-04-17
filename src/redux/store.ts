@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { logActions } from "./middlewares";
-import { pokemonReducer } from "./reducers/pokemonReducer";
+import { rootReducer } from "./reducers/rootReducers";
 
 export const store = configureStore({
-  reducer: pokemonReducer,
+  reducer: rootReducer,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(logActions),
+    getDefaultMiddleware({ serializableCheck: false }).concat(logActions),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
