@@ -6,6 +6,7 @@ export interface IPokemon {
     front_default: string;
   };
   types: type[];
+  favorite?: boolean;
 }
 
 interface type {
